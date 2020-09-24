@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; line-height: 1.64;
+    color: #434242;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 100%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-12a {width: 100%;}
+.col-12ab {width: 100%;}
+.col-12ac {width: 100%;}
+.col-12d {width: 100%;}
+
+.header {
+    height: 660px;
+    width: 100%;
+    display: flexbox;
+    background: url(bg.png) no-repeat center left fixed; 
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 54px;
+    color: #22A39F;
+}
+
+h3 {font-size: 20px; text-align: center; font-weight: normal;}
+h2 {font-size: 27px; text-align: center; color: #22A39F;}
+h6 {font-size: 15px; text-align: center;}
+
+hr {width: 80%; margin: auto; color: #727878; opacity: 0.5;}
+p {margin:10px 10% 10px 10%; text-align: justify;}
+#merged {margin: 2px 10% 2px 10%;}
+
+#center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid rgba(245, 240, 240, 0.972);
+    border-radius: 50%;
+    height: 250px;
+}
+.center {text-align: center; margin: 0;}
+#experiences {background-color: #F3EFE0;}
+
+#left {
+    text-align: left;
+    margin:10px 10% 2px 10%;
+    color: #434242;
+}
+ul {
+    list-style-type: square; 
+    margin-left: 10%;
+}
+li {margin-right: 10%;}
+
+.responsive {
+    display: inline-block;
+    padding: 6px;
+}
+.img0 {
+    width: 350px;
+    height: 350px;
+}
+.gallery {
+    border: 1px solid #ccc;
+    float: left;
+    width: 351px;
+    margin-left: 5%;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);ss   
+}
+.gallery:hover {outline: 1px solid black;}  
+
+#pg {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: black;
+    height: 450px;
+}
+
+.imglink {
+    width: 50px; 
+    height: 50px; 
+    margin-left: 40%;"
+}
+
+.imglink:hover {
+    width:100px;
+    height: 100px;
+}
+
+@media only screen and (min-width: 762px) {
+/* for desktop */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-12a {width: 33.33%; margin-left: 7%;}
+.col-12ab {width: 41.66%; margin: 0px; position: relative; right: 150px; top: 20px;}
+.col-12ac {width: 16.66%; margin:0px; position: relative; right: 260px;}
+.col-12d {width: 100%; position: relative; bottom: 20px;}
+
+.center {text-align: left;}
+#special {text-align: left;}
+
+}
+
+.sidenav {
+    height: 69%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+.navb {
+    width:40px; 
+    height: 40px;
+    padding-bottom: 5px;
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 30px;
+}
