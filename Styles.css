@@ -28,12 +28,18 @@
 .col-12ac {width: 100%;}
 .col-12d {width: 100%;}
 
-.header {
-    height: 660px;
+.header #back-pic {
     width: 100%;
-    display: flexbox;
-    background: url(bg.png) no-repeat center left fixed; 
-    background-size: cover;
+    display: inline-block;
+    background: url("bg.png") no-repeat fixed;
+    background-size: 100%;
+    background-position: 50% 0%;
+}
+
+.header #back-pic .inner {
+    padding-top: 57.35%; /* height/width of image */
+    display: block;
+    height: 0;
 }
 
 h1 {
@@ -77,13 +83,13 @@ li {margin-right: 10%;}
     padding: 6px;
 }
 .img0 {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
 }
 .gallery {
     border: 1px solid #ccc;
     float: left;
-    width: 351px;
+    width: 321px;
     margin-left: 5%;
     margin-top: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);ss   
@@ -103,7 +109,7 @@ li {margin-right: 10%;}
 .imglink {
     width: 50px; 
     height: 50px; 
-    margin-left: 40%;"
+    margin-left: 40%;
 }
 
 .imglink:hover {
@@ -111,7 +117,7 @@ li {margin-right: 10%;}
     height: 100px;
 }
 
-@media only screen and (min-width: 762px) {
+@media only screen and (min-width: 1200px) {
 /* for desktop */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
